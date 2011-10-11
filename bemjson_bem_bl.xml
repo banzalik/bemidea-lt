@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="bem_bl.bemjson.js">
+  <template name="bl-b-p-link" value="{&#10;    block: 'b-link',&#10;    mods: { pseudo: 'yes' },&#10;    url: '$URL$',&#10;    content: '$END$'&#10;}," description="b-pseudo-link" toReformat="false" toShortenFQNames="true">
+    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="bl-b-link" value="{&#10;    block: 'b-link',&#10;    url: '$URL$',&#10;    title: '$TITLE$',&#10;    target: '$TARGET$',&#10;    content: '$END$'&#10;}," description="b-link" toReformat="false" toShortenFQNames="true">
+    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="title" alwaysStopAt="true" />
+    <variable name="TARGET" expression="" defaultValue="_self" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="bl-b-icon" value="{&#10;    block: 'b-icon',&#10;    url: '$URL$',&#10;    alt: '$ALT$'&#10;},$END$" description="b-icon" toReformat="false" toShortenFQNames="true">
+    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ALT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="bl-b-logo" value="{&#10;    block: 'b-logo',&#10;    content: {&#10;        elem: 'icon',&#10;        url: '$URL$',&#10;        alt: '$ALT$'&#10;    }&#10;},$END$" description="b-logo" toReformat="false" toShortenFQNames="true">
+    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ALT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="bl-b-link-logo" value="{&#10;    block: 'b-logo',&#10;    content: [&#10;        {&#10;            elem: 'link',&#10;            url: '$URL$',&#10;            title: '$TITLE$',&#10;            icon: {&#10;                elem: 'icon',&#10;                url: '$SRC$',&#10;                alt: '$TITLE$'&#10;            }&#10;        }&#10;    ]&#10;},$END$" description="b-logo with b-link" toReformat="false" toShortenFQNames="true">
+    <variable name="URL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SRC" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="bl-b-page" value="([&#10;    {&#10;        block: 'b-page',&#10;        title: '$TITLE$',&#10;        head: [&#10;            {&#10;                elem: 'css',&#10;                url: '$PAGE$.css'&#10;            },&#10;            {&#10;                elem: 'css',&#10;                url: '$PAGE$.ie.css',&#10;                ie: true&#10;            },&#10;            { elem : 'js', url: '//yandex.st/jquery/1.6.2/jquery.min.js' },&#10;            {&#10;                elem: 'js',&#10;                url: '$PAGE$.js'&#10;            }&#10;        ],&#10;        content: [&#10;            $END$&#10;        ]&#10;    }&#10;])" description="b-page" toReformat="false" toShortenFQNames="true">
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="bl-b-search" value="{&#10;    block: 'b-search',&#10;    attrs: { action: '$ACTION$' },&#10;    input: {&#10;        elem: 'input',&#10;        attrs: { value: '$VALUE$' }&#10;    },&#10;    button: {&#10;        elem: 'button'&#10;    }&#10;},$END$" description="b-search" toReformat="false" toShortenFQNames="true">
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="PHP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+
