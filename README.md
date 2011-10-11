@@ -13,3 +13,10 @@ bemjson_bem_bl
 bemjson_surround
 ---------------------------
 Темплейты для обвертывания блоков другими блоками
+
+Установка
+---------------------------
+Для Webstorm\PhpStorm помещаем файлы *.xml
+в директорию
+MacOS: ~/Library/Preferences/WebIDE10/templates
+Win: User\YouName\.WebIde10\config\templates\
